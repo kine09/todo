@@ -1,7 +1,9 @@
-.App {
+*{
   text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +37,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#header{
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #ccc;
+}
+
+#nav{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+#nav li{
+  padding: 10px 10px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+#nav li:hover{
+  text-decoration: underline;
+}
+#header button{
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+#header button:hover{
+  outline: auto;
 }
